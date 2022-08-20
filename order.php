@@ -12,12 +12,12 @@
 	$il_paczkow = $_POST['il_paczkow'];
 	$il_drozdzowek = $_POST['il_drozdzowek'];
 	
-	$koszt_chlebow = 3.80*$il_chlebow;
-	$koszt_bulek = 0.70*$il_bulek;
-	$koszt_paczkow = 2.70*$il_paczkow;
-	$koszt_drozdzowek = 3.30*$il_drozdzowek;
+	$koszt_chlebow = number_format(3.80*$il_chlebow, 2);
+	$koszt_bulek = number_format(0.70*$il_bulek, 2);
+	$koszt_paczkow = number_format(2.70*$il_paczkow, 2);
+	$koszt_drozdzowek = number_format(3.30*$il_drozdzowek, 2);
 	
-	$razem = $koszt_chlebow + $koszt_bulek + $koszt_paczkow + $koszt_drozdzowek;
+	$razem = number_format($koszt_chlebow + $koszt_bulek + $koszt_paczkow + $koszt_drozdzowek, 2);
 	
 echo<<<END
 
