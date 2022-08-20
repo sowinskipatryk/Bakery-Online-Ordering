@@ -2,9 +2,11 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<title>Piekarnia Fredek - Podsumowanie zamówienia</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<title>Piekarnia Ferdek - Podsumowanie zamówienia</title>
 </head>
 <body>
+<div style="padding: 20px 0px 0px 20px;">
 <?php
 
 	$il_chlebow = $_POST['il_chlebow'];
@@ -21,10 +23,10 @@
 	
 echo<<<END
 
-<h2>Piekarnia Fredek - Podsumowanie zamówienia</h2>
+<h2 class="pb-3">Piekarnia Ferdek - Podsumowanie zamówienia</h2>
 
-<table border="1" cellspacing="0" cellpadding="10">
-<tr>
+<table border="1" cellspacing="0" cellpadding="10" class="table mt-4" style="width:30%;">
+<tr class="table-primary">
 	<td>Wyrób</td>
 	<td>Cena jedn.</td>
 	<td>Ilość</td>
@@ -56,15 +58,16 @@ echo<<<END
 </tr>
 </table>
 
-<h3> Razem: $razem zł <h3> 
+<h3 class="pt-3"> Razem: $razem zł <h3> 
 
 END;
 
 ?>
 
 <form action="confirmation.php">
-<input type="submit" value="Potwierdź zamówienie">
+<input type="submit" value="Potwierdź zamówienie" class="btn btn-primary mt-4">
 </form>
+</div>
 
 </body>
 </html>
